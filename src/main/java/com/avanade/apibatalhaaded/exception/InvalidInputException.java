@@ -12,6 +12,6 @@ public class InvalidInputException extends RuntimeException {
 	}
 
 	public InvalidInputException( ) {
-		super( "Invalid Payload" );
+		super( "Valor inválido" );
 	}
 }

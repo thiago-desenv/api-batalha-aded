@@ -1,5 +1,6 @@
 package com.avanade.apibatalhaaded.model;
 
+import com.avanade.apibatalhaaded.model.enums.TipoPersonagem;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,8 +20,10 @@ public class Personagem implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID", nullable = false)
 	private Long id;
-	@Column(name = "HEROI", nullable = false)
-	private String heroi;
+	@Column(name = "NOME", nullable = false)
+	private String nome;
+	@Column(name = "TIPO_PERSONAGEM")
+	private TipoPersonagem tipoPersonagem;
 	@Column(name = "VIDA", nullable = false)
 	private Long vida;
 	@Column(name = "FORCA", nullable = false)
