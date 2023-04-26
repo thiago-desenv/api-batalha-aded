@@ -15,7 +15,7 @@ import java.util.List;
 @RequestMapping( value = "/apibatalhaaded" )
 @Api( value = "Batalha ADED API REST" )
 @CrossOrigin( origins = "*" )
-public class Controller {
+public class PersonagemController {
 
 	@Autowired
 	private PersonagemService service;
