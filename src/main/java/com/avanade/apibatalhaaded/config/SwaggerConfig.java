@@ -28,7 +28,7 @@ public class SwaggerConfig {
 
 	private ApiInfo metaInfo( ) {
 
-		ApiInfo apiInfo = new ApiInfo( "TODO List", "Task list API REST.", "1.0.0",
+		ApiInfo apiInfo = new ApiInfo( "Batalha AD&D ", "Batalha AD&D API REST.", "1.0.0",
 									   "Terms of Service", new Contact( "Thiago Xavier Ferreira",
 																		"https://github.com/thiago-desenv",
 																		"thiago_osim@hotmail.com" ),

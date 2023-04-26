@@ -16,9 +16,9 @@ public class PersonagemService {
 	@Autowired
 	private PersonagemRepository repository;
 
-	public Personagem create(Personagem task ) {
-		task.setCreatedAt( LocalDateTime.now( ) );
-		return this.repository.save( task );
+	public Personagem create(Personagem personagem ) {
+		personagem.setCreatedAt( LocalDateTime.now( ) );
+		return this.repository.save( personagem );
 	}
 
 	public List<Personagem> findAll( ) {
@@ -35,18 +35,10 @@ public class PersonagemService {
 		repository.deleteById( id );
 	}
 
-	public Personagem update(Personagem task ) {
-		if ( task.getId( ) == null ) {
+	public Personagem update(Personagem personagem ) {
+		if ( personagem.getId( ) == null ) {
 			throw new InvalidInputException( "There is no ID" );
 		}
-		return repository.save( task );
+		return repository.save( personagem );
 	}
-
-//	public Task generateRandom( ) {
-//		Activity activity = boredApiService.callBoredApi( );
-//		Task     task     = new Task( );
-//		task.setTitle( activity.getActivity( ) );
-//		task.setDescription( activity.getType( ) + " Task" );
-//		return create( task );
-//	}
 }
