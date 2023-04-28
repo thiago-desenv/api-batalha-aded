@@ -4,10 +4,10 @@ Api desenvolvida para o processamento do jodo AD&D
 
 #Tecnologia utilizadas
 Backend:
-Java 
-spring boot
-Maven
-H2
+- Java 
+- spring boot
+- Maven
+- H2
 
 #Requisitos para execução
 - Java 8
