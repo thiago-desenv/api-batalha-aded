@@ -13,7 +13,7 @@ import java.util.Random;
 
 @RestController
 @RequestMapping( value = "/apibatalhaaded" )
-@Api( value = "Batalha ADED API REST" )
+@Api( value = "Batalha ADED API REST - FLUXO" )
 @CrossOrigin( origins = "*" )
 public class FluxoJogoController {
 

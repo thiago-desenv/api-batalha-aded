@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping( value = "/apibatalhaaded" )
-@Api( value = "Batalha ADED API REST" )
+@Api( value = "Batalha ADED API REST - PERSONAGEM" )
 @CrossOrigin( origins = "*" )
 public class PersonagemController {
 

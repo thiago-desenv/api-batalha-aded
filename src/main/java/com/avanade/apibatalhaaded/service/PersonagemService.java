@@ -28,7 +28,7 @@ public class PersonagemService {
 	public Personagem findById(Long id ) {
 		return repository.findById( id )
 						 .orElseThrow( ( ) -> new ResourceNotFoundException(
-								 "Task not found with ID: " + id ) );
+								 "Personagem não encontrado com o ID: " + id ) );
 	}
 
 	public void delete( Long id ) {
@@ -37,7 +37,7 @@ public class PersonagemService {
 
 	public Personagem update(Personagem personagem ) {
 		if ( personagem.getId( ) == null ) {
-			throw new InvalidInputException( "There is no ID" );
+			throw new InvalidInputException( "ID vazio" );
 		}
 		return repository.save( personagem );
 	}
